@@ -8,7 +8,7 @@ var map = new mapboxgl.Map({
     // Mapbox Style URL
     style: 'mapbox://styles/mapbox/streets-v11',
     zoom: 12.56, // Default Zoom
-    center: [80.24791800725399, 13.016985549343335] // Default centered coordinate
+    center: [80.21696530503047,12.87107664042501] // Default centered coordinate
 });
 
 // Search Places
@@ -72,7 +72,7 @@ $('#get-direction').click(function () {
             directions.setOrigin(userLocation);
 
             // Set a fixed destination (you can modify this)
-            directions.setDestination([80.24032199119884, 13.014142278807459]);
+            directions.setDestination([80.21696530503047,12.87107664042501]);
 
             // Add the directions control to the map
             map.addControl(directions, 'top-left');
